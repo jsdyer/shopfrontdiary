@@ -1,16 +1,38 @@
 {
-  "id": "coolcode-tool-template",
-  "title": "CoolCode Tool Starter",
-  "description": "A browser-only example that trims lines and removes exact duplicates.",
-  "category": "security",
-  "tags": ["text", "lines", "duplicates"],
-  "icon": "scan-search",
-  "url": "/coolcode-tool-template/",
-  "source": "https://github.com/jsdyer/coolcode-tool-template",
+  "id": "shopfrontdiary",
+  "title": "Shopfront Diary",
+  "description": "Follow a shop or street address through historic Halifax and Vancouver directories and open the page behind each listing.",
+  "category": "places",
+  "tags": [
+    "Halifax",
+    "Vancouver",
+    "food",
+    "city directories",
+    "history"
+  ],
+  "icon": "map",
+  "url": "/shopfrontdiary/",
+  "source": "https://github.com/jsdyer/shopfrontdiary",
   "hosting": "project",
   "access": "browser",
   "data_info": {
-    "mode": "local",
-    "detail": "The browser reads the text you paste and compares its lines."
+    "mode": "snapshot",
+    "detail": "Selected food trades and neighbours from Halifax and Vancouver directory editions, 1890–1909.",
+    "cadence": "Monthly",
+    "probes": [
+      {
+        "label": "Data retrieved",
+        "url": "https://coolcode.ca/shopfrontdiary/data/edition.json",
+        "path": [
+          "retrieved"
+        ],
+        "count_at": {
+          "path": [
+            "count"
+          ],
+          "unit": "directory listings"
+        }
+      }
+    ]
   }
 }

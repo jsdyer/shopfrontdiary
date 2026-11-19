@@ -1,21 +1,16 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { cleanLines } from '../web/model.mjs';
-test('trims, removes blanks and preserves first-seen order', () => {
-  assert.deepEqual(cleanLines('  Halifax\nLangley\nHalifax\n\nVancouver  '), {
-    text: 'Halifax\nLangley\nVancouver', count: 3, removed: 1,
-  });
+import {readFileSync} from 'node:fs';
+import {listings,addressHistory} from '../web/model.mjs';
+const {rows}=JSON.parse(readFileSync(new URL('../web/data/edition.json',import.meta.url)));
+test('An oyster query finds the Rialto; its address history includes both publications',()=>{
+  const found=listings(rows,'Halifax','All editions','oySter');
+  assert.equal(found.length,1); assert.match(found[0].name,/Rialto/);
+  assert.deepEqual(addressHistory(rows,'Halifax · 44–46 Upper Water').map(e=>e.entries.length),[1,1]);
 });
-test('supports Windows and old Mac line endings', () => {
-  assert.equal(cleanLines('a\r\nb\ra').text, 'a\nb');
+test('Transcription gaps are distinct from explicit vacancies',()=>{
+  const editions=addressHistory(rows,'Vancouver · 608 Granville');
+  assert.equal(editions.find(e=>e.edition==='1903').entries.length,0);
+  assert.equal(editions.find(e=>e.edition==='1908').entries[0].trade,'Delicatessen');
+  assert.equal(listings(rows,'Halifax','1899–1900','vacancy')[0].address,'80 Upper Water');
 });
-test('empty text and whitespace produce an empty result', () => {
-  assert.deepEqual(cleanLines(' \n\t'), { text: '', count: 0, removed: 0 });
-});
-test('preserves case and Unicode', () => {
-  assert.equal(cleanLines('Québec\nquébec\n東京\nQuébec').text, 'Québec\nquébec\n東京');
-});
-test('treats markup as ordinary text', () => {
-  assert.equal(cleanLines('<script>alert(1)</script>\n<script>alert(1)</script>').text, '<script>alert(1)</script>');
-});
-test('rejects non-text input', () => { assert.throws(() => cleanLines(null), TypeError); });

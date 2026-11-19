@@ -1,0 +1,34 @@
+[
+  {
+    "url": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008229",
+    "sha256": "35a89d20a8cb813f3ab4f8aa8d3da2d823e16a4f0ff3d2d16eb94be53eef796a"
+  },
+  {
+    "url": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008238",
+    "sha256": "2adbadde3c2b6d5132948d4fd2df5d2a54550e8edbb333d535316a0734ba6790"
+  },
+  {
+    "url": "https://westendvancouver.wordpress.com/wp-content/uploads/2018/11/john-oben-vancouver-city-directory-1896-page-165.jpg",
+    "sha256": "4032cba67a347e72ff65e44ab819618aac66ee63327a735cb85a18babb692490"
+  },
+  {
+    "url": "https://westendvancouver.wordpress.com/wp-content/uploads/2018/11/john-oben-henderson_s-city-of-vancouver-directory-1906-page-515.jpg",
+    "sha256": "5c594da1012b94cc42735d518ce6b26e0954cc9de99b512a2275ad3c7b68e55e"
+  },
+  {
+    "url": "https://westendvancouver.wordpress.com/wp-content/uploads/2018/11/john-oben-henderson_s-bc-gazetteer-and-directory-1891-page-450.jpg",
+    "sha256": "fa8d8b772ffcbb304c76be839bc8d7ca9fcfc3a7d72ef67240040e5985be6de5"
+  },
+  {
+    "url": "https://westendvancouver.wordpress.com/wp-content/uploads/2018/11/john-oben-henderson_s-bc-gazetteer-and-directory-1903-page-775.jpg",
+    "sha256": "8d7c3d62c619ecb3833a1be6f68e691eebc995fb6e6ce8079e64ff39e7e43489"
+  },
+  {
+    "url": "https://westendvancouver.wordpress.com/wp-content/uploads/2018/11/provincial-delicatessen-company-limited-henderson_s-city-of-vancouver-directory-1908-page-878.jpg",
+    "sha256": "eff975f328ce118c7c88c34cbe48d6dc77e47c7934bec5fad39cf1f34955a626"
+  },
+  {
+    "url": "https://westendvancouver.wordpress.com/wp-content/uploads/2018/11/john-oben-henderson_s-city-of-vancouver-and-north-vancouver-directory-1909-page-947.jpg",
+    "sha256": "c1e88c567a6625bbdd09f9df54b4e290fb41e66c3ff31b6876c07d4eeb712b5c"
+  }
+]
