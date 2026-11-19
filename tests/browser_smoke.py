@@ -30,6 +30,16 @@ def main():
                 page.on("pageerror", lambda error: errors.append(str(error)))
                 page.goto(f"http://127.0.0.1:{server.server_port}/example-tool/")
                 page.wait_for_function("document.querySelector('#metadata').textContent.includes('retrieved')")
+                page.locator('#evidence').select_option('Printed vacancy')
+                assert '100–102 Upper Water' in page.locator('#pairs').inner_text()
+                assert page.locator('#pairs tbody tr').count() == 2
+                page.locator('#compare-city').select_option('Vancouver')
+                assert 'No addresses match' in page.locator('#pairs').inner_text()
+                page.locator('#evidence').select_option('Both editions')
+                assert '413 Hastings W' in page.locator('#pairs').inner_text()
+                assert 'Printed page 751' in page.locator('#pairs').inner_text()
+                page.locator('#earlier').select_option('1908')
+                assert page.locator('#later').input_value() == '1909'
                 page.locator('#search').fill('oyster')
                 assert 'Rialto' in page.locator('#matches').inner_text()
                 page.locator('#matches a[href="#history"]').click()

@@ -95,7 +95,7 @@
       "city": "Halifax",
       "edition": "1899–1900",
       "address": "26–28 Upper Water",
-      "name": "British American House · Brousard, proprietor",
+      "name": "British American House · M Brousard, proprietor",
       "trade": "Hotel",
       "source": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008238#page=630",
       "page": "PDF page 630"
@@ -243,8 +243,206 @@
       "trade": "Baker and confectioner",
       "source": "https://westendvancouver.wordpress.com/wp-content/uploads/2018/11/john-oben-henderson_s-city-of-vancouver-and-north-vancouver-directory-1909-page-947.jpg",
       "page": "Printed page 947"
+    },
+    {
+      "city": "Halifax",
+      "edition": "1890–91",
+      "address": "38 Upper Water",
+      "name": "Eaton Watson & Son",
+      "trade": "Commission merchants",
+      "source": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008229#page=485",
+      "page": "PDF page 485"
+    },
+    {
+      "city": "Halifax",
+      "edition": "1890–91",
+      "address": "40–42 Upper Water",
+      "name": "St John House · J Hartry, proprietor",
+      "trade": "House listed with proprietor",
+      "source": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008229#page=485",
+      "page": "PDF page 485"
+    },
+    {
+      "city": "Halifax",
+      "edition": "1890–91",
+      "address": "54–56 Upper Water",
+      "name": "James Johnson",
+      "trade": "Variety",
+      "source": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008229#page=485",
+      "page": "PDF page 485"
+    },
+    {
+      "city": "Halifax",
+      "edition": "1890–91",
+      "address": "64 Upper Water",
+      "name": "Creighton & Marshall",
+      "trade": "Stationers",
+      "source": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008229#page=485",
+      "page": "PDF page 485"
+    },
+    {
+      "city": "Halifax",
+      "edition": "1890–91",
+      "address": "66 Upper Water",
+      "name": "Doull & Gibson",
+      "trade": "Back entrance",
+      "source": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008229#page=485",
+      "page": "PDF page 485"
+    },
+    {
+      "city": "Halifax",
+      "edition": "1890–91",
+      "address": "68 Upper Water",
+      "name": "E D Adams",
+      "trade": "Manufacturer’s agent",
+      "source": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008229#page=485",
+      "page": "PDF page 485"
+    },
+    {
+      "city": "Halifax",
+      "edition": "1890–91",
+      "address": "70 Upper Water",
+      "name": "A W Redden",
+      "trade": "Back entrance",
+      "source": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008229#page=485",
+      "page": "PDF page 485"
+    },
+    {
+      "city": "Halifax",
+      "edition": "1890–91",
+      "address": "72 Upper Water",
+      "name": "Robert Taylor",
+      "trade": "Goods entrance",
+      "source": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008229#page=485",
+      "page": "PDF page 485"
+    },
+    {
+      "city": "Halifax",
+      "edition": "1890–91",
+      "address": "100–102 Upper Water",
+      "name": "W Fitzgerald & Co",
+      "trade": "Boots and shoes",
+      "source": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008229#page=485",
+      "page": "PDF page 485"
+    },
+    {
+      "city": "Halifax",
+      "edition": "1899–1900",
+      "address": "38–42 Upper Water",
+      "name": "John Coleman",
+      "trade": "Occupant; trade unspecified",
+      "source": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008238#page=630",
+      "page": "PDF page 630"
+    },
+    {
+      "city": "Halifax",
+      "edition": "1899–1900",
+      "address": "50 Upper Water",
+      "name": "Margaret Megan",
+      "trade": "Listed as widow of Lewis; trade unspecified",
+      "source": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008238#page=630",
+      "page": "PDF page 630"
+    },
+    {
+      "city": "Halifax",
+      "edition": "1899–1900",
+      "address": "54 Upper Water",
+      "name": "Richard Hayes",
+      "trade": "Occupant; trade unspecified",
+      "source": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008238#page=630",
+      "page": "PDF page 630"
+    },
+    {
+      "city": "Halifax",
+      "edition": "1899–1900",
+      "address": "54 Upper Water",
+      "name": "Clement Parsons",
+      "trade": "Occupant; trade unspecified",
+      "source": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008238#page=630",
+      "page": "PDF page 630"
+    },
+    {
+      "city": "Halifax",
+      "edition": "1899–1900",
+      "address": "56 Upper Water",
+      "name": "J M McGrath & Co",
+      "trade": "Trade unspecified",
+      "source": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008238#page=630",
+      "page": "PDF page 630"
+    },
+    {
+      "city": "Halifax",
+      "edition": "1899–1900",
+      "address": "64 Upper Water",
+      "name": "Creighton & Marshall",
+      "trade": "Trade unspecified",
+      "source": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008238#page=630",
+      "page": "PDF page 630"
+    },
+    {
+      "city": "Halifax",
+      "edition": "1899–1900",
+      "address": "66 Upper Water",
+      "name": "A B Boak",
+      "trade": "Goods entrance",
+      "source": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008238#page=630",
+      "page": "PDF page 630"
+    },
+    {
+      "city": "Halifax",
+      "edition": "1899–1900",
+      "address": "68 Upper Water",
+      "name": "E D Adams",
+      "trade": "Occupant; trade unspecified",
+      "source": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008238#page=630",
+      "page": "PDF page 630"
+    },
+    {
+      "city": "Halifax",
+      "edition": "1899–1900",
+      "address": "70 Upper Water",
+      "name": "J A Gass & Co",
+      "trade": "Trade unspecified",
+      "source": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008238#page=630",
+      "page": "PDF page 630"
+    },
+    {
+      "city": "Halifax",
+      "edition": "1899–1900",
+      "address": "72 Upper Water",
+      "name": "W H Johnson Co, Ltd",
+      "trade": "Trade unspecified",
+      "source": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008238#page=630",
+      "page": "PDF page 630"
+    },
+    {
+      "city": "Halifax",
+      "edition": "1899–1900",
+      "address": "100–102 Upper Water",
+      "name": "Shop unoccupied",
+      "trade": "Explicit vacancy",
+      "source": "https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008238#page=630",
+      "page": "PDF page 630"
+    },
+    {
+      "city": "Vancouver",
+      "edition": "1901",
+      "address": "413 Hastings W",
+      "name": "John Oben",
+      "trade": "Baker, confectioner and caterer",
+      "source": "https://westendvancouver.wordpress.com/wp-content/uploads/2018/11/john-oben-henderson_s-bc-gazetteer-and-directory-1901-page-751.jpg",
+      "page": "Printed page 751"
+    },
+    {
+      "city": "Vancouver",
+      "edition": "1901",
+      "address": "4 Arcade",
+      "name": "John Oben",
+      "trade": "Baker, confectioner and caterer",
+      "source": "https://westendvancouver.wordpress.com/wp-content/uploads/2018/11/john-oben-henderson_s-bc-gazetteer-and-directory-1901-page-751.jpg",
+      "page": "Printed page 751"
     }
   ],
-  "count": 27,
+  "count": 49,
   "retrieved": "2026-11-19"
 }

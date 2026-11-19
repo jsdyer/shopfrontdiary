@@ -1,7 +1,7 @@
 {
   "id": "shopfrontdiary",
   "title": "Shopfront Diary",
-  "description": "Follow a shop or street address through historic Halifax and Vancouver directories and open the page behind each listing.",
+  "description": "Compare two historic directories address by address to trace shops, neighbours and recorded vacancies in Halifax and Vancouver.",
   "category": "places",
   "tags": [
     "Halifax",
@@ -17,7 +17,7 @@
   "access": "browser",
   "data_info": {
     "mode": "snapshot",
-    "detail": "Selected food trades and neighbours from Halifax and Vancouver directory editions, 1890–1909.",
+    "detail": "Digitized Halifax and Vancouver directories supply selected shop listings and their printed source pages from 1890–1909.",
     "cadence": "Monthly",
     "probes": [
       {

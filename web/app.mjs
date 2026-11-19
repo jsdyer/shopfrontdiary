@@ -1,8 +1,59 @@
 import {$, link, node, options, table, load} from './ui.mjs';
-import {listings, addressHistory, addressKey} from './model.mjs';
+import {listings, addressHistory, addressKey, compareEditions, matchesEvidence} from './model.mjs';
 load(data => {
   options('city', ['Both cities', 'Halifax','Vancouver']);
   function source(r) { return link(r.page+' ↗', r.source); }
+  const cities = [...new Set(data.rows.map(row => row.city))];
+  options('compare-city', cities, 'Halifax');
+  options('evidence', ['All addresses', 'Both editions', 'One edition only', 'Printed vacancy']);
+
+  function printedEntries(rows) {
+    if (!rows.length) return node('span', 'No entry in this extract', 'missing');
+    const entries = node('div', undefined, 'entries');
+    for (const row of rows) {
+      const entry = node('div');
+      entry.append(node('strong', row.name), node('span', row.trade), source(row));
+      entries.append(entry);
+    }
+    return entries;
+  }
+
+  function comparison() {
+    const city = $('compare-city').value;
+    const earlier = $('earlier').value;
+    const later = $('later').value;
+    const pairs = compareEditions(data.rows, city, earlier, later);
+    const shown = pairs.filter(pair => matchesEvidence(pair, $('evidence').value));
+    const both = pairs.filter(pair => matchesEvidence(pair, 'Both editions')).length;
+    $('pair-summary').textContent = city + ' · ' + both + ' of ' + pairs.length +
+      ' exact addresses have entries in both sampled editions. Showing ' + shown.length + '.';
+    if (shown.length) {
+      table('pairs', ['Historic address', earlier, later],
+        shown.map(pair => [pair.address, printedEntries(pair.earlier), printedEntries(pair.later)]));
+    } else {
+      $('pairs').replaceChildren(node('p', 'No addresses match this evidence filter in the selected pair.'));
+    }
+  }
+
+  function comparisonYears() {
+    return [...new Set(data.rows.filter(row => row.city === $('compare-city').value).map(row => row.edition))].sort();
+  }
+  function laterYears(preferred) {
+    options('later', comparisonYears().filter(year => year > $('earlier').value), preferred);
+    comparison();
+  }
+  function compareCity() {
+    const years = comparisonYears();
+    const vancouver = $('compare-city').value === 'Vancouver';
+    options('earlier', years.slice(0, -1), vancouver ? '1901' : years[0]);
+    laterYears(vancouver ? '1903' : years.at(-1));
+  }
+  $('compare-city').onchange = compareCity;
+  $('earlier').onchange = () => laterYears($('later').value);
+  $('later').onchange = comparison;
+  $('evidence').onchange = comparison;
+  compareCity();
+
   function history() {
     const key = $('address').value;
     const editions = addressHistory(data.rows, key);
