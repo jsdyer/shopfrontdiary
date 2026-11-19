@@ -3,6 +3,18 @@
 <meta name="description" content="{{DESCRIPTION}}"><title>{{TITLE}} · CoolCode</title><link rel="stylesheet" href="./style.css"><script type="module" src="./app.mjs"></script></head>
 <body data-tool-id="{{TOOL_ID}}"><a class="skip" href="#main">Skip to content</a><header><a href="https://coolcode.ca/">← CoolCode</a><a href="{{SOURCE_URL}}">Source &amp; instructions ↗</a></header>
 <main id="main"><div class="mast"><div class="kicker">Halifax & Vancouver</div><h1>{{TITLE}}</h1><p class="intro">{{DESCRIPTION}}</p><div class="meta" id="metadata">Loading source details…</div></div><noscript>Enable JavaScript to use the filters and comparisons.</noscript><p id="error" role="alert"></p>
+<section id="street-comparison"><h2>What changed on the street?</h2>
+<p>Choose two editions to put the printed entries for each address side by side. In Halifax, compare the Upper Water listings between Duke and Buckingham. In Vancouver, try 1901 and 1903 to follow John Oben’s shops.</p>
+<div class="controls">
+<label>Comparison city<select id="compare-city"></select></label>
+<label>Earlier edition<select id="earlier"></select></label>
+<label>Later edition<select id="later"></select></label>
+<label>Show addresses<select id="evidence"></select></label>
+</div>
+<p id="pair-summary" class="callout" role="status"></p>
+<div id="pairs" class="tablewrap"></div>
+<p>“No entry in this extract” means there is no transcription for that exact address in the selected edition. Ranges such as 50–52 and 50 stay separate. A printed vacancy describes a single edition. Trade descriptions come from the entry for that year.</p>
+</section>
 <section><h2>Browse the directory</h2><p>Search the selected listings by trade, proprietor or historic address. A match opens the address history across the sampled editions.</p>
 <div class="controls"><label>City<select id="city"></select></label><label>Directory edition<select id="edition"></select></label><label>Address, shop or trade<input type="search" id="search" placeholder="Try oyster or 608 Granville"></label></div>
 <p id="summary" role="status"></p><div id="matches" class="tablewrap"></div></section>
