@@ -8,9 +8,15 @@ Search selected food trades, proprietors and neighbouring premises on Halifax’
 Compare Halifax’s 1890–91 and 1899–1900 directories to find the explicit vacancies at 80 and 100–102 Upper Water. On the same street, see both listed occupants at number 54, alongside the earlier 54–56 range. Compare Vancouver in 1901 and 1903 to see John Oben listed at 413 Hastings W in both, alongside different second shop addresses. Each entry links to its source page.
 <!-- /coolcode:guide -->
 
+Direct examples
+
+- [413 West Hastings Street in Vancouver Directories](https://coolcode.ca/shopfrontdiary/413-hastings-west.html)
+- [608 Granville Street in Vancouver Directories](https://coolcode.ca/shopfrontdiary/608-granville.html)
+- [80 Upper Water Street in Halifax Directories](https://coolcode.ca/shopfrontdiary/80-upper-water.html)
+
 ## Scope and method
 
-- Halifax excerpts come from [McAlpine’s 1890–91 directory](https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008229) and its [1899–1900 edition](https://central.bac-lac.gc.ca/.item/?op=pdf&id=nlc008238) at Library and Archives Canada. Records link to the PDF page number. They combine street, personal and trade listings. Initials, rounded street-number ranges and expanded trade descriptions help search. Each record keeps its printed address and a source page for checking the transcription.
+- Halifax excerpts come from [McAlpine’s 1890–91 directory](https://data2.archives.ca/obj/001075/f2/nlc008229.pdf) and its [1899–1900 edition](https://data2.archives.ca/obj/001075/f2/nlc008238.pdf) at Library and Archives Canada. Records link to the PDF page number. They combine street, personal and trade listings. Initials, rounded street-number ranges and expanded trade descriptions help search. Each record keeps its printed address and a source page for checking the transcription.
 - Vancouver covers selected listings in 1891, 1896, 1901, 1903, 1906, 1908 and 1909. Read the directory reproductions gathered in [WestEndVancouver’s John Oben research](https://westendvancouver.wordpress.com/biographies-n-z/biographies-o/oben-john-1862-1919/) or explore [Vancouver Public Library’s digitized directories](https://bccd.vpl.ca/). Page references are the printed numbers. Listings for the same firm can give multiple shop addresses. Each has its own row.
 - The edition comparison aligns exact address labels within one city. Halifax includes the numbered entries between Duke and Buckingham on Upper Water (PDF pages 485 and 630 respectively). This includes separate occupants at the same number and goods entrances. In 1901 Oben’s entry lists 413 Hastings W and 4 Arcade plus a residence. Only the two business addresses enter the comparison.
 - The address history groups exact transcribed addresses within a city. Listings at overlapping number ranges or different locations stay separate. Search a surname to find people across addresses. The choices reflect the pages reviewed and cannot establish a business’s opening or closing date. An explicit “shop unoccupied” entry is an observation for that edition.

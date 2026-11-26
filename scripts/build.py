@@ -12,6 +12,9 @@ ROOT = Path(__file__).resolve().parents[1]
 SLUG = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*")
 
 
+from place_pages import publish_pages
+
+
 def metadata(root=ROOT):
     tool = json.loads((root / "tool.json").read_text(encoding="utf-8"))
     required = {"id", "title", "description", "category", "tags", "icon", "url", "source", "hosting", "access", "data_info"}
@@ -60,7 +63,7 @@ def build(root=ROOT):
             page = page.replace(placeholder, escape(tool[key], quote=True))
         if re.search(r"\{\{[A-Z_]+\}\}", page):
             raise ValueError("Unresolved template placeholder in web/index.html")
-        index.write_text(page, encoding="utf-8")
+        publish_pages(stage, page, tool)
         (stage / ".nojekyll").touch()
         if output.exists():
             shutil.rmtree(output)

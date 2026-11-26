@@ -4,7 +4,8 @@ load(data => {
   options('city', ['Both cities', 'Halifax','Vancouver']);
   function source(r) { return link(r.page+' ↗', r.source); }
   const cities = [...new Set(data.rows.map(row => row.city))];
-  options('compare-city', cities, 'Halifax');
+  const preset = document.body.dataset;
+  options('compare-city', cities, preset.city || 'Halifax');
   options('evidence', ['All addresses', 'Both editions', 'One edition only', 'Printed vacancy']);
 
   function printedEntries(rows) {
@@ -95,5 +96,9 @@ load(data => {
     render();
   }
   $('city').onchange = editions; $('edition').onchange = render; $('search').oninput = render; $('address').onchange = history;
+  if (preset.city && preset.address) {
+    $('city').value = preset.city;
+    $('search').value = preset.address;
+  }
   editions();
 });

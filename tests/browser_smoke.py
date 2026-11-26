@@ -54,6 +54,15 @@ def main():
                 assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth")
                 page.screenshot(path=str(screenshots / "mobile.png"), full_page=True)
                 assert not errors, errors
+                for slug,city,address in [('413-hastings-west','Vancouver','413 Hastings W'),('608-granville','Vancouver','608 Granville'),('80-upper-water','Halifax','80 Upper Water')]:
+                    page.goto(f'http://127.0.0.1:{server.server_port}/example-tool/{slug}.html')
+                    page.locator('#timeline tbody tr').first.wait_for()
+                    assert page.locator('#search').input_value() == address
+                    assert page.locator('#city').input_value() == city
+                    assert page.locator('#address').input_value() == city + ' · ' + address
+                    assert page.locator('.place-evidence li a').count() > 1
+                    assert page.locator('link[rel="canonical"]').get_attribute('href') == 'https://coolcode.ca/shopfrontdiary/' + slug + '.html'
+                    assert page.evaluate('document.documentElement.scrollWidth <= window.innerWidth')
                 browser.close()
             print("Browser checks passed: project subpath, filters, records and mobile layout")
         finally:

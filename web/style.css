@@ -7,3 +7,6 @@
 #pairs .entries>div+div{border-top:1px dotted #ad9e8f;margin-top:.5rem;padding-top:.5rem}
 #pairs .entries a,.missing{font-size:.86em}
 .missing{color:#615950}
+
+.place-evidence{margin:1rem 0;padding:1rem;border:1px solid currentColor;border-radius:.4rem;overflow-wrap:anywhere}.place-evidence p{margin:.35rem 0}.place-evidence ul{margin:.6rem 0;padding-left:1.35rem}.place-evidence li{margin:.3rem 0}
+ .route-links{display:flex;flex-wrap:wrap;gap:.45rem 1.15rem}.route-links a{font-weight:650}h1{font-size:clamp(1.8rem,5vw,3.4rem);overflow-wrap:anywhere}
